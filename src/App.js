@@ -7,10 +7,9 @@ import logo from './images/nav-logo.png';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import ReactDom from 'react-dom';
 import 'antd/dist/antd.css';
 import { Carousel, Layout, Menu, Icon } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
+const { Sider } = Layout;
 
 class App extends Component {
   render() {
@@ -129,8 +128,9 @@ const Home = () => (
         <img className="home-img" src={ bg4 } alt="Background 4" />
       </div>
     </Carousel>
-    <div className="carousel-title">LOOKS DO MATTER</div>
+    <p className="carousel-title">LOOKS DO MATTER</p>
     <div className="carousel-subtitle"><p>We are BCA Licensed builder and Registered Renovation Contractor. We are not only serve you good looking for the space, what’s inside that really matters.</p></div>
+    <div className="home-footer">&copy; 2018 G Top International Pte Ltd</div>
   </div>
 );
 
@@ -159,8 +159,30 @@ const Career = () => (
 );
 
 const Contact = () => (
-  <div className="coming-soon">
-    <span className="green">COMING</span><span className="blue">SOON</span>
+  <div className="content">
+    <div className="banner">
+      <h1>Let's Keep In Touch!</h1>
+      <h3>We’d love to hear about your project and help you get started.</h3>
+    </div>
+    <div className="contact-cards-container">
+      <div className="contact-card-container">
+        <div className="left-card">
+          <Icon className="contact-icon-lg" type="tool" />
+          <h3>Construction Office</h3>
+          <p><Icon className="mail-icon" type="mail" />info@gtop.asia</p>
+          <p><Icon className="location-icon" type="environment-o" />5001 Beach Road, Golden Mile Complex<br />#07-01, Singapore 199588</p>
+        </div>
+      </div>
+      <div className="contact-card-container">
+        <div className="right-card">
+          <Icon className="contact-icon-lg" type="desktop" />
+          <h3>IT Office</h3>
+          <p><Icon className="mail-icon" type="mail" />info@e-spector.com</p>
+          <p><Icon className="location-icon" type="environment-o" />JTC LaunchPad@One-North Blk 79<br />#04-01/02, S139955</p>
+        </div>
+      </div>
+    </div>
+    <div className="footer">&copy; 2018 G Top International Pte Ltd</div>
   </div>
 );
 
