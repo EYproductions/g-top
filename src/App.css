@@ -1,31 +1,221 @@
-.App {
+.navbar {
+  position: absolute;
+  left: 0;
+  padding: 25px 30px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+  font-size: 16px;
+}
+
+.navbar-collapse {
+  z-index: 6999 !important;
+}
+
+.navbar-item {
+  text-align: center;
+  flex: 1;
+  list-style-type: none;
+}
+
+.navbar-item a, .ant-menu a {
+  color: rgba(255,255,255,0.8);
+}
+
+.navbar-item a:hover, .navbar-item a:active, .navbar-item a:focus, .ant-menu a:hover, .ant-menu a:active, .ant-menu a:focus {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.content {
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content div {
+  height: 100%;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: opacity 250ms ease-in;
+}
+
+.ant-carousel {
+  height: 100% !important;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  background: #364d79;
+  overflow: hidden;
+  height: 100% !important;
+}
+
+.home-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ant-carousel .slick-dots {
+  bottom: 66px !important;
+}
+
+.nav-logo {
+  margin: -18px 0 -12px 0;
+  height: 38px;
+}
+
+.nav-logo-collapse {
+  z-index: 999;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  width: 100%;
+  height: 36px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 1s linear;
-  height: 80px;
+.nav-logo-collapse img {
+  height: 100%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.carousel-container {
+  text-align: center;
+  height: 100%;
 }
 
-.App-title {
-  font-size: 1.5em;
+.carousel-title {
+  font-size: 72px;
+  color: rgba(255,255,255,0.9);
+  position: fixed;
+  top: 36%;
+  width: 100%;
+  text-align: center;
 }
 
-.App-intro {
-  font-size: large;
+.carousel-subtitle {
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  position: fixed;
+  top: 53%;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(10deg); }
-  50% { transform: rotate(0deg); }
-  75% { transform: rotate(-10deg); }
-  100% { transform: rotate(0deg); }
+.carousel-subtitle p{
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ant-layout-sider-zero-width-trigger {
+  top: 16px !important;
+}
+
+.coming-soon {
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  text-align: center;
+  font-size: 72px;
+  background-color: rgba(0,0,0,0.8);
+}
+.green {
+  color: #4EAE4A;
+}
+.blue {
+  color: #36A2C8;
+}
+
+@media screen and (max-width: 992px) {
+  .lg-display {
+    display: none;
+  }
+  .carousel-title {
+    font-size: 60px;
+  }
+  .carousel-subtitle {
+    font-size: 14px;
+  }
+  .carousel-subtitle p{
+    max-width: 580px;
+  }
+  .navbar {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-title {
+    font-size: 54px;
+  }
+  .carousel-subtitle {
+    font-size: 12px;
+  }
+  .carousel-subtitle p{
+      max-width: 500px;
+    }
+  .md-none {
+    display: none;
+  }
+  .coming-soon {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-title {
+    font-size: 48px;
+  }
+  .carousel-subtitle {
+    font-size: 12px;
+  }
+  .carousel-subtitle p{
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-title {
+    font-size: 28px;
+  }
+  .carousel-subtitle {
+    font-size: 12px;
+  }
+  .carousel-subtitle p{
+    max-width: 330px;
+  }
+  .nav-logo-collapse {
+    top: 16px;
+    height: 30px;
+  }
+  .ant-layout-sider-zero-width-trigger {
+    top: 12px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .md-only {
+    display: none;
+  }
 }
