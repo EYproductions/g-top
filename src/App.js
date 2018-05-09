@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import bg1 from './images/bg-1.png';
-import bg2 from './images/bg-2.png';
-import bg3 from './images/bg-3.png';
-import bg4 from './images/bg-4.png';
 import logo from './images/nav-logo.png';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import 'antd/dist/antd.css';
-import { Carousel, Layout, Menu, Icon } from 'antd';
+import Contact from './components/Contact.js';
+import Home from './components/Home.js';
+import Commercial from './components/Commercial.js';
+import Residential from './components/Residential.js';
+import Intelligent from './components/Intelligent.js';
+import Career from './components/Career.js';
+import { Layout, Menu, Icon } from 'antd';
 const { Sider } = Layout;
 
 class App extends Component {
@@ -111,79 +113,5 @@ class App extends Component {
     );
   }
 }
-
-const Home = () => (
-  <div className="carousel-container">
-    <Carousel autoplay>
-      <div>
-        <img className="home-img" src={ bg1 } alt="Background 1" />
-      </div>
-      <div>
-        <img className="home-img" src={ bg2 } alt="Background 2" />
-      </div>
-      <div>
-        <img className="home-img" src={ bg3 } alt="Background 3" />
-      </div>
-      <div>
-        <img className="home-img" src={ bg4 } alt="Background 4" />
-      </div>
-    </Carousel>
-    <p className="carousel-title">LOOKS DO MATTER</p>
-    <div className="carousel-subtitle"><p>We are BCA Licensed builder and Registered Renovation Contractor. We are not only serve you good looking for the space, what’s inside that really matters.</p></div>
-    <div className="home-footer">&copy; 2018 G Top International Pte Ltd</div>
-  </div>
-);
-
-const Commercial = () => (
-  <div className="coming-soon">
-    <span className="green">COMING</span><span className="blue">SOON</span>
-  </div>
-);
-
-const Residential = () => (
-  <div className="coming-soon">
-    <span className="green">COMING</span><span className="blue">SOON</span>
-  </div>
-);
-
-const Intelligent = () => (
-  <div className="coming-soon">
-    <span className="green">COMING</span><span className="blue">SOON</span>
-  </div>
-);
-
-const Career = () => (
-  <div className="coming-soon">
-    <span className="green">COMING</span><span className="blue">SOON</span>
-  </div>
-);
-
-const Contact = () => (
-  <div className="content">
-    <div className="banner">
-      <h1>Let's Keep In Touch!</h1>
-      <h3>We’d love to hear about your project and help you get started.</h3>
-    </div>
-    <div className="contact-cards-container">
-      <div className="contact-card-container">
-        <div className="left-card">
-          <Icon className="contact-icon-lg" type="tool" />
-          <h3>Construction Office</h3>
-          <p><Icon className="mail-icon" type="mail" />info@gtop.asia</p>
-          <p><Icon className="location-icon" type="environment-o" />5001 Beach Road, Golden Mile Complex<br />#07-01, Singapore 199588</p>
-        </div>
-      </div>
-      <div className="contact-card-container">
-        <div className="right-card">
-          <Icon className="contact-icon-lg" type="desktop" />
-          <h3>IT Office</h3>
-          <p><Icon className="mail-icon" type="mail" />info@e-spector.com</p>
-          <p><Icon className="location-icon" type="environment-o" />JTC LaunchPad@One-North Blk 79<br />#04-01/02, S139955</p>
-        </div>
-      </div>
-    </div>
-    <div className="footer">&copy; 2018 G Top International Pte Ltd</div>
-  </div>
-);
 
 export default App;
