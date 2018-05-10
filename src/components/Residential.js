@@ -10,19 +10,13 @@ class Residential extends Component {
       visible: true,
     });
   }
-  handleOk = (e) => {
-    console.log(e);
-    this.setState({
-      visible: false,
-    });
-  }
   handleCancel = (e) => {
     console.log(e);
     this.setState({
       visible: false,
     });
   }
-  
+
   render() {
   	  const images = [
       {
@@ -30,29 +24,65 @@ class Residential extends Component {
         thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-1.f75533d1.png',
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+        original: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-2.7c7abf12.png',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-2.7c7abf12.png'
       },
       {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+        original: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-3.1770beb0.png',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-3.1770beb0.png'
       }
     ]
 
     return (
-    	<div>
-    		<ImageGallery items={images} />
+    	<div className="content-page">
+    		<div className="gallery-container">
+    			<div className="gallery-card" onClick={this.showModal}>
+    				<h2>Bathroom</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div>
+    			<div className="gallery-card" onClick={this.showModal}>
+    				<h2>Detached House</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div>
+    			<div className="gallery-card" onClick={this.showModal}>
+    				<h2>Kitchen</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div>
+    			<div className="gallery-card" onClick={this.showModal}>
+    				<h2>Living & Dining</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div><div className="gallery-card" onClick={this.showModal}>
+    				<h2>Study</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div>
+    			<div className="gallery-card" onClick={this.showModal}>
+    				<h2>Terrace & Balcony</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div>
+    			<div className="gallery-card" onClick={this.showModal}>
+    				<h2>Wardrobe</h2>
+    				<span>STYLE 1</span>
+    				<span>STYLE 2</span>
+    			</div>
+    		</div>	
 
-        <Button type="primary" onClick={this.showModal}>Open</Button>
         <Modal
           title="Basic Modal"
           visible={this.state.visible}
-          onOk={this.handleOk}
           onCancel={this.handleCancel}
+          footer={null}
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <ImageGallery 
+          	items={images}
+	          showIndex={true}
+	          autoPlay={true}
+	          slideOnThumbnailHover={true} />
         </Modal>
       </div>
     );

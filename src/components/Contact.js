@@ -4,7 +4,7 @@ import { Icon } from 'antd';
 class Contact extends Component {
   render() {
     return (
-    <div className="content">
+    <div className="bg-white">
 	    <div className="banner">
 	      <h1>Let's Keep In Touch!</h1>
 	      <h3>We’d love to hear about your project and help you get started.</h3>
