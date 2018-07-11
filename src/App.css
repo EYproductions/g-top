@@ -183,7 +183,8 @@
   height: auto;
 }
 .gallery-container {
-  width: 960px;
+  width: 1280px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -195,9 +196,41 @@
   border-radius: 8px;
   background-color: #f5f5f5;
   margin: 10px;
-  background-image: url('https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-1.f75533d1.png');
   background-size: cover;
   padding: 30px;
+}
+.one-north {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/ucommune-one-north/ucommune-one-north-1.jpg');
+}
+.suntec {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/ucommune-suntec/ucommune-suntec-1.jpg');
+}
+.office-a {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/office1/office1-1.jpg');
+}
+.office-b {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/office2/office2-1.jpg');
+}
+.office-c {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/office3/office3-1.jpg');
+}
+.bar-a {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/bar1/bar1-1.jpg');
+}
+.bar-b {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/bar2/bar2-1.jpg');
+}
+.nus-pgp {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/nus-pgp/nus-pgp-1.jpg');
+}
+.canteen-a {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/canteen1/canteen1-1.jpg');
+}
+.canteen-b {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/canteen2/canteen2-1.jpg');
+}
+.canteen-c {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/canteen3/canteen3-1.jpg');
 }
 .gallery-card h2 {
   color: rgba(255,255,255,0.9);
