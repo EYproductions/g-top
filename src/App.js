@@ -63,27 +63,27 @@ class App extends Component {
                   <div className="logo" />
                   <Menu theme="dark" mode="inline">
                     <Menu.Item key="0">
-                      <Icon type="user" />
+                      <Icon type="home" />
                       <span className="nav-text"><Link to="/home">Home</Link></span>
                     </Menu.Item>
                     <Menu.Item key="1">
-                      <Icon type="user" />
+                      <Icon type="shop" />
                       <span className="nav-text"><Link to="/commercial">Commercial</Link></span>
                     </Menu.Item>
                     <Menu.Item key="2">
-                      <Icon type="video-camera" />
+                      <Icon type="coffee" />
                       <span className="nav-text"><Link to="/residential">Residential</Link></span>
                     </Menu.Item>
                     <Menu.Item key="3">
-                      <Icon type="upload" />
+                      <Icon type="laptop" />
                       <span className="nav-text"><Link to="/intelligent">Intelligent</Link></span>
                     </Menu.Item>
                     <Menu.Item key="4">
-                      <Icon type="user" />
+                      <Icon type="team" />
                       <span className="nav-text"><Link to="/career">Career</Link></span>
                     </Menu.Item>
                     <Menu.Item key="5">
-                      <Icon type="user" />
+                      <Icon type="form" />
                       <span className="nav-text"><Link to="/contact">Contact</Link></span>
                     </Menu.Item>
                   </Menu>
