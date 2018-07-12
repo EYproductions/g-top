@@ -322,6 +322,21 @@
   .coming-soon {
     font-size: 36px;
   }
+  .gallery-container {
+    display: block;
+  }
+  .gallery-card {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .gallery-title {
+    margin: 10px;
+    font-size: 24px;
+  }
+  .gallery-title span {
+    font-size: 12px;
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -333,6 +348,17 @@
   }
   .carousel-subtitle p{
     max-width: 480px;
+  }
+  .gallery-card {
+    height: 200px !important;
+    width: 90%
+  }
+  .gallery-card h2 {
+    margin-top: 90px;
+    margin-bottom: 5px;
+  }
+  .gallery-card span {
+    font-size: 12px;
   }
 }
 
