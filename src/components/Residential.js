@@ -36,55 +36,360 @@ class Residential extends Component {
   }
 
   render() {
-  	  const bathroomImages = [
+  	const bathroomImages = [
       {
-        original: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-1.f75533d1.png',
-        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-1.f75533d1.png'
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-1.jpg'
       },
       {
-        original: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-2.7c7abf12.png',
-        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-2.7c7abf12.png'
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-2.jpg'
       },
       {
-        original: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-3.1770beb0.png',
-        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/www.gtop.asia/static/media/bg-3.1770beb0.png'
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-3.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-3.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-4.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-4.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-5.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-5.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-6.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-6.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-7.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-7.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-8.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-8.jpg'
       }
     ]
+    const detachedHouseImages = [
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/detached-house/detached-house-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/detached-house/detached-house-1.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/detached-house/detached-house-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/detached-house/detached-house-2.jpg'
+      }
+    ]
+    const kitchenImages = [
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-1.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-2.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-3.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-3.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-4.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-4.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-5.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-5.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-6.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-6.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-7.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-7.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-8.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-8.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-9.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-9.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-10.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-10.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-11.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-11.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-12.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-12.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-13.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-13.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-14.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-14.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-15.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-15.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-16.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-16.jpg'
+      }
+    ]
+    const livingAndDiningImages = [
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-1.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-2.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-3.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-3.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-4.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-4.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-5.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-5.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-6.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-6.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-7.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-7.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-8.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-8.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-9.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-9.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-10.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-10.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-11.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-11.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-12.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-12.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-13.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-13.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-14.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-14.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-15.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-15.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-16.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-16.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-17.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-17.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-18.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-18.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-19.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-19.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-20.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-20.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-21.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-21.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-22.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-22.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-23.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-23.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-24.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-24.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-25.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-25.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-26.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-26.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-27.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-27.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-28.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-28.jpg'
+      }
+    ]
+    const studyImages = [
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-1.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-2.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-3.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-3.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-4.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-4.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-5.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-5.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-6.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-6.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-7.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-7.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-8.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-8.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-9.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-9.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-10.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-10.jpg'
+      }
+    ]
+    const terraceAndBalconyImages = [
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-1.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-2.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-3.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-3.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-4.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-4.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-5.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-5.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-6.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-6.jpg'
+      }
+    ]
+    const wardrobeImages = [
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-1.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-1.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-2.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-2.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-3.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-3.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-4.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-4.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-5.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-5.jpg'
+      },
+      {
+        original: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-6.jpg',
+        thumbnail: 'https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-6.jpg'
+      }
+    ]
+
 
     return (
     	<div className="content-page">
     		<div className="gallery-container">
-    			<div className="gallery-card" onClick={() => this.setBathroomVisible(true)}>
+    			<div className="gallery-card bathroom" onClick={() => this.setBathroomVisible(true)}>
     				<h2>Bathroom</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    			<div className="gallery-card" onClick={() => this.setDetachedHouseVisible(true)}>
+    			<div className="gallery-card detached-house" onClick={() => this.setDetachedHouseVisible(true)}>
     				<h2>Detached House</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    			<div className="gallery-card" onClick={() => this.setKitchenVisible(true)}>
+    			<div className="gallery-card kitchen" onClick={() => this.setKitchenVisible(true)}>
     				<h2>Kitchen</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    			<div className="gallery-card" onClick={() => this.setLivingVisible(true)}>
+    			<div className="gallery-card living-and-dining" onClick={() => this.setLivingVisible(true)}>
     				<h2>Living & Dining</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    			<div className="gallery-card" onClick={() => this.setStudyVisible(true)}>
+    			<div className="gallery-card study" onClick={() => this.setStudyVisible(true)}>
     				<h2>Study</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    			<div className="gallery-card" onClick={() => this.setTerraceVisible(true)}>
+    			<div className="gallery-card terrace-and-balcony" onClick={() => this.setTerraceVisible(true)}>
     				<h2>Terrace & Balcony</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    			<div className="gallery-card" onClick={() => this.setWardrobeVisible(true)}>
+    			<div className="gallery-card wardrobe" onClick={() => this.setWardrobeVisible(true)}>
     				<h2>Wardrobe</h2>
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
@@ -111,7 +416,7 @@ class Residential extends Component {
           footer={null}
         >
           <ImageGallery 
-          	items={bathroomImages}
+          	items={detachedHouseImages}
 	          showIndex={true}
 	          autoPlay={true}
 	          slideOnThumbnailHover={true} />
@@ -124,7 +429,7 @@ class Residential extends Component {
           footer={null}
         >
           <ImageGallery 
-          	items={bathroomImages}
+          	items={kitchenImages}
 	          showIndex={true}
 	          autoPlay={true}
 	          slideOnThumbnailHover={true} />
@@ -137,7 +442,7 @@ class Residential extends Component {
           footer={null}
         >
           <ImageGallery 
-          	items={bathroomImages}
+          	items={livingAndDiningImages}
 	          showIndex={true}
 	          autoPlay={true}
 	          slideOnThumbnailHover={true} />
@@ -150,7 +455,7 @@ class Residential extends Component {
           footer={null}
         >
           <ImageGallery 
-          	items={bathroomImages}
+          	items={studyImages}
 	          showIndex={true}
 	          autoPlay={true}
 	          slideOnThumbnailHover={true} />
@@ -163,7 +468,7 @@ class Residential extends Component {
           footer={null}
         >
           <ImageGallery 
-          	items={bathroomImages}
+          	items={terraceAndBalconyImages}
 	          showIndex={true}
 	          autoPlay={true}
 	          slideOnThumbnailHover={true} />
@@ -176,7 +481,7 @@ class Residential extends Component {
           footer={null}
         >
           <ImageGallery 
-          	items={bathroomImages}
+          	items={wardrobeImages}
 	          showIndex={true}
 	          autoPlay={true}
 	          slideOnThumbnailHover={true} />

@@ -189,6 +189,7 @@
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .gallery-card {
   width: 300px;
@@ -231,6 +232,27 @@
 }
 .canteen-c {
   background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/commercial/canteen3/canteen3-1.jpg');
+}
+.bathroom {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/bathroom/bathroom-1.jpg');
+}
+.detached-house {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/detached-house/detached-house-1.jpg');
+}
+.kitchen {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/kitchen/kitchen-1.jpg');
+}
+.living-and-dining {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/living-and-dining/living-and-dining-1.jpg');
+}
+.study {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/study/study-1.jpg');
+}
+.terrace-and-balcony {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/terrace-and-balcony/terrace-and-balcony-1.jpg');
+}
+.wardrobe {
+  background-image: url('https://s3-ap-southeast-1.amazonaws.com/g-top-gallery/residential/wardrobe/wardrobe-1.jpg');
 }
 .gallery-card h2 {
   color: rgba(255,255,255,0.9);
