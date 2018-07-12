@@ -291,7 +291,7 @@
 
 @media screen and (max-width: 768px) {
   .carousel-title {
-    font-size: 54px;
+    font-size: 52px;
   }
   .carousel-subtitle {
     font-size: 12px;
@@ -309,7 +309,7 @@
 
 @media screen and (max-width: 576px) {
   .carousel-title {
-    font-size: 48px;
+    font-size: 44px;
   }
   .carousel-subtitle {
     font-size: 12px;

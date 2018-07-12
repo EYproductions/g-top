@@ -23,7 +23,7 @@ class Home extends Component {
 		        <img className="home-img" src={ bg4 } alt="Background 4" />
 		      </div>
 		    </Carousel>
-		    <p className="carousel-title">LOOKS DO MATTER</p>
+		    <p className="carousel-title">Ideal outside. Ideas inside.</p>
 		    <div className="carousel-subtitle"><p>We are BCA Licensed builder and Registered Renovation Contractor. We are not only serve you good looking for the space, what’s inside that really matters.</p></div>
 		    <div className="home-footer">&copy; 2018 G Top International Pte Ltd</div>
 		  </div>
