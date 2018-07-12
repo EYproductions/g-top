@@ -248,58 +248,56 @@ class Residential extends Component {
           		</div>
     			<div className="gallery-card one-north" onClick={() => this.setOneNorthVisible(true)}>
     				<h2>Ucommune - One North</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>office</span>
+    				<span>start-up</span>
     			</div>
     			<div className="gallery-card suntec" onClick={() => this.setSuntecVisible(true)}>
     				<h2>Ucommune - Suntec</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>office</span>
+    				<span>start-up</span>
     			</div>
     			<div className="gallery-card office-a" onClick={() => this.setOfficeAVisible(true)}>
-    				<h2>Office A</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Harbourfront Tower</h2>
+    				<span>office</span>
+    				<span>corporate</span>
     			</div>
     			<div className="gallery-card office-b" onClick={() => this.setOfficeBVisible(true)}>
-    				<h2>Office B</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>WLNA</h2>
+    				<span>office</span>
+    				<span>corporate</span>
     			</div>
     			<div className="gallery-card office-c" onClick={() => this.setOfficeCVisible(true)}>
-    				<h2>Office C</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Innovation Place</h2>
+    				<span>office</span>
+    				<span>corporate</span>
     			</div>
     			<div className="gallery-card bar-a" onClick={() => this.setBarAVisible(true)}>
-    				<h2>Bar A</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Amoy Street</h2>
+    				<span>bars</span>
     			</div>
     			<div className="gallery-card bar-b" onClick={() => this.setBarBVisible(true)}>
-    				<h2>Bar B</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Prinsep Street</h2>
+    				<span>bars</span>
     			</div>
     			<div className="gallery-card nus-pgp" onClick={() => this.setNusPgpVisible(true)}>
     				<h2>NUS PGP</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>dining</span>
+    				<span>casual</span>
+    				<span>university</span>
     			</div>
     			<div className="gallery-card canteen-a" onClick={() => this.setCanteenAVisible(true)}>
-    				<h2>Canteen A</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Dempsey Hill</h2>
+    				<span>restaurant</span>
     			</div>
     			<div className="gallery-card canteen-b" onClick={() => this.setCanteenBVisible(true)}>
-    				<h2>Canteen B</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Ye Chun</h2>
+    				<span>restaurant</span>
+    				<span>chinese</span>
     			</div>
     			<div className="gallery-card canteen-c" onClick={() => this.setCanteenCVisible(true)}>
-    				<h2>Canteen C</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<h2>Somerset</h2>
+    				<span>casual</span>
+    				<span>food court</span>
     			</div>
     		</div>	
     		<div className="footer content-footer">&copy; 2018 G Top International Pte Ltd</div>
@@ -358,7 +356,7 @@ class Residential extends Component {
 
         <Modal
           title="Office C"
-          visible={this.state.officeCImages}
+          visible={this.state.officeCVisible}
           onCancel={() => this.setOfficeCVisible(false)}
           footer={null}
         >

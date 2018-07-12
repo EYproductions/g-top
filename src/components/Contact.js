@@ -15,7 +15,7 @@ class Contact extends Component {
 	          <Icon className="contact-icon-lg" type="tool" />
 	          <h3>Construction Office</h3>
 	          <p><Icon className="mail-icon" type="mail" />info@gtop.asia</p>
-	          <p><Icon className="location-icon" type="environment-o" />5001 Beach Road, Golden Mile Complex<br />#07-01, Singapore 199588</p>
+	          <p><Icon className="location-icon" type="environment-o" />Vision Exchange #10-03, 2 Venture<br />Drive, S608526</p>
 	        </div>
 	      </div>
 	      <div className="contact-card-container">

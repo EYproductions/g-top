@@ -365,38 +365,41 @@ class Residential extends Component {
           </div>
     			<div className="gallery-card bathroom" onClick={() => this.setBathroomVisible(true)}>
     				<h2>Bathroom</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>industrial</span>
+    				<span>wood</span>
+            <span>marble</span>
     			</div>
     			<div className="gallery-card detached-house" onClick={() => this.setDetachedHouseVisible(true)}>
     				<h2>Detached House</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>contemporary</span>
+    				<span>stylish</span>
     			</div>
     			<div className="gallery-card kitchen" onClick={() => this.setKitchenVisible(true)}>
     				<h2>Kitchen</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>cottage</span>
+    				<span>modern</span>
+            <span>mediterranean</span>
     			</div>
     			<div className="gallery-card living-and-dining" onClick={() => this.setLivingVisible(true)}>
     				<h2>Living & Dining</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>eclectic</span>
+    				<span>modern</span>
     			</div>
     			<div className="gallery-card study" onClick={() => this.setStudyVisible(true)}>
     				<h2>Study</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>cottage</span>
+    				<span>vintage</span>
+            <span>industrial</span>
     			</div>
     			<div className="gallery-card terrace-and-balcony" onClick={() => this.setTerraceVisible(true)}>
     				<h2>Terrace & Balcony</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>ethnic</span>
+    				<span>vintage</span>
+            <span>tropical</span>
     			</div>
     			<div className="gallery-card wardrobe" onClick={() => this.setWardrobeVisible(true)}>
     				<h2>Wardrobe</h2>
-    				<span>STYLE 1</span>
-    				<span>STYLE 2</span>
+    				<span>contemporary</span>
     			</div>
     		</div>
         <div className="footer content-footer">&copy; 2018 G Top International Pte Ltd</div>	
