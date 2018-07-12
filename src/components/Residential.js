@@ -359,6 +359,10 @@ class Residential extends Component {
     return (
     	<div className="content-page">
     		<div className="gallery-container">
+          <div className="gallery-title">
+            Gallery | Residential
+            <span>76 photos</span>
+          </div>
     			<div className="gallery-card bathroom" onClick={() => this.setBathroomVisible(true)}>
     				<h2>Bathroom</h2>
     				<span>STYLE 1</span>
@@ -394,7 +398,8 @@ class Residential extends Component {
     				<span>STYLE 1</span>
     				<span>STYLE 2</span>
     			</div>
-    		</div>	
+    		</div>
+        <div className="footer content-footer">&copy; 2018 G Top International Pte Ltd</div>	
 
         <Modal
           title="Bathroom"

@@ -143,6 +143,11 @@
   margin-top: 80px;
   margin-bottom: 5px;
 }
+.content-footer {
+  color: rgba(255,255,255,0.6);
+  font-weight: 100;
+  margin-top: 50px;
+}
 .carousel-subtitle p{
   max-width: 690px;
   margin-left: auto;
@@ -190,6 +195,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.gallery-title {
+  width: 100%;
+  margin: 10px;
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.gallery-title span {
+  font-size: 14px;
+  font-weight: 100;
+  margin-left: 20px;
+  color: #FFFFFFAA;
 }
 .gallery-card {
   width: 300px;

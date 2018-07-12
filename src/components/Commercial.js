@@ -242,6 +242,10 @@ class Residential extends Component {
     return (
     	<div className="content-page">
     		<div className="gallery-container">
+    			<div className="gallery-title">
+            		Gallery | Commercial
+            		<span>41 photos</span>
+          		</div>
     			<div className="gallery-card one-north" onClick={() => this.setOneNorthVisible(true)}>
     				<h2>Ucommune - One North</h2>
     				<span>STYLE 1</span>
@@ -298,6 +302,7 @@ class Residential extends Component {
     				<span>STYLE 2</span>
     			</div>
     		</div>	
+    		<div className="footer content-footer">&copy; 2018 G Top International Pte Ltd</div>
 
         <Modal
           title="Ucommune - One North"
