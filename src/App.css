@@ -4,7 +4,7 @@
   padding: 25px 30px;
   width: 100%;
   display: flex;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   z-index: 999;
   font-size: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -331,11 +331,11 @@
   }
   .gallery-title {
     margin: 10px;
-    font-size: 24px;
+    font-size: 20px;
   }
   .gallery-title span {
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 14px;
   }
 }
 
@@ -351,10 +351,11 @@
   }
   .gallery-card {
     height: 200px !important;
-    width: 90%
+    width: 90%;
+    padding: 20px;
   }
   .gallery-card h2 {
-    margin-top: 90px;
+    margin-top: 105px;
     margin-bottom: 5px;
   }
   .gallery-card span {
