@@ -364,42 +364,56 @@ class Residential extends Component {
             <span>76 photos</span>
           </div>
     			<div className="gallery-card bathroom" onClick={() => this.setBathroomVisible(true)}>
-    				<h2>Bathroom</h2>
-    				<span>industrial</span>
-    				<span>wood</span>
-            <span>marble</span>
+    				<div className="card-filter">
+              <h2>Bathroom</h2>
+      				<span>industrial</span>
+      				<span>wood</span>
+              <span>marble</span>
+            </div>
     			</div>
     			<div className="gallery-card detached-house" onClick={() => this.setDetachedHouseVisible(true)}>
-    				<h2>Detached House</h2>
-    				<span>contemporary</span>
-    				<span>stylish</span>
+      			<div className="card-filter">	
+              <h2>Detached House</h2>
+      				<span>contemporary</span>
+      				<span>stylish</span>
+            </div>
     			</div>
     			<div className="gallery-card kitchen" onClick={() => this.setKitchenVisible(true)}>
-    				<h2>Kitchen</h2>
-    				<span>cottage</span>
-    				<span>modern</span>
-            <span>mediterranean</span>
+      			<div className="card-filter">	
+              <h2>Kitchen</h2>
+      				<span>cottage</span>
+      				<span>modern</span>
+              <span>mediterranean</span>
+            </div>
     			</div>
     			<div className="gallery-card living-and-dining" onClick={() => this.setLivingVisible(true)}>
-    				<h2>Living & Dining</h2>
-    				<span>eclectic</span>
-    				<span>modern</span>
+      			<div className="card-filter">	
+              <h2>Living & Dining</h2>
+      				<span>eclectic</span>
+      				<span>modern</span>
+            </div>
     			</div>
     			<div className="gallery-card study" onClick={() => this.setStudyVisible(true)}>
-    				<h2>Study</h2>
-    				<span>cottage</span>
-    				<span>vintage</span>
-            <span>industrial</span>
+      			<div className="card-filter">	
+              <h2>Study</h2>
+      				<span>cottage</span>
+      				<span>vintage</span>
+              <span>industrial</span>
+            </div>  
     			</div>
     			<div className="gallery-card terrace-and-balcony" onClick={() => this.setTerraceVisible(true)}>
-    				<h2>Terrace & Balcony</h2>
-    				<span>ethnic</span>
-    				<span>vintage</span>
-            <span>tropical</span>
+      			<div className="card-filter">	
+              <h2>Terrace & Balcony</h2>
+      				<span>ethnic</span>
+      				<span>vintage</span>
+              <span>tropical</span>
+            </div>  
     			</div>
     			<div className="gallery-card wardrobe" onClick={() => this.setWardrobeVisible(true)}>
-    				<h2>Wardrobe</h2>
-    				<span>contemporary</span>
+      			<div className="card-filter">	
+              <h2>Wardrobe</h2>
+      				<span>contemporary</span>
+            </div>
     			</div>
     		</div>
         <div className="footer content-footer">&copy; 2018 G Top International Pte Ltd</div>	
